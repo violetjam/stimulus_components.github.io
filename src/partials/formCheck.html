@@ -1,0 +1,13 @@
+<div data-controller="form">
+    <form>
+      姓名：<input type="text" data-target="form.name">
+      <span style="color:red;display:none" data-target="form.namespan">*此为必填字段</span>
+      <br/>
+      性别:<input type="radio">男 <input type="radio">女
+      <br/>
+      邮箱：<input type="text" data-target="form.mail">
+      <span style="color:red;display:none" data-target="form.mailspan">*邮箱格式出错</span>
+      <br/>
+      <input type="submit" data-action="click->form#check" value="提交">
+    </form>
+  </div>

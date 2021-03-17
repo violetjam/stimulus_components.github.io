@@ -1,0 +1,34 @@
+{
+  "name": "RST-Element-Prototype",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "el-transition": "^0.0.7",
+    "stimulus-use": "^0.17.0"
+  },
+  "scripts": {
+    "tailwind": "nodemon --watch ./src/tailwind.css --watch ./tailwind.config.js --watch ./postcss.config.js --exec \"npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css\"",
+    "webpack": "nodemon --watch ./webpack.config.js --watch ./package.json --exec \"webpack-cli serve\"",
+    "start": "yarn run tailwind & yarn run webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "autoprefixer": "^10.0.4",
+    "babel-loader": "^8.2.2",
+    "expose-loader": "^2.0.0",
+    "extra-watch-webpack-plugin": "^1.0.3",
+    "html-webpack-partials-plugin": "^0.7.1",
+    "html-webpack-plugin": "^4.5.0",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.6",
+    "postcss": "^8.1.10",
+    "stimulus": "^1.1.1",
+    "tailwindcss": "^2.0.3",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.3.11"
+  }
+}
